@@ -45,7 +45,7 @@ contract SimpleNftTest is Test {
 
     function testTokenUriIsCorrect() public {
         vm.prank(USER);
-        simpleNft.mintNft(NFT_URI); // oth index tokenId minted here
+        simpleNft.mintNft(NFT_URI); // 0th index tokenId minted here
 
         assert(
             keccak256(abi.encodePacked(simpleNft.tokenURI(0))) ==
