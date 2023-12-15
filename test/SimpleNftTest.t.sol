@@ -40,7 +40,7 @@ contract SimpleNftTest is Test {
         vm.prank(USER);
         simpleNft.mintNft(NFT_URI);
 
-        assert(simpleNft.balanceOf(USER) == 1);
+        assert(simpleNft.balanceOf(USER) == 1); // user balance of is stored in mapping in uint output not in array
     }
 
     function testTokenUriIsCorrect() public {
