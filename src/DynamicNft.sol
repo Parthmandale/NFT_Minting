@@ -98,5 +98,7 @@ contract DynamicNft is ERC721, Ownable {
 
     function tokenCounter() public view returns (uint256) {
         return s_tokenCounter;
+
+        //_Dynamic Nft
     }
 }
